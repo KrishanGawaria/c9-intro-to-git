@@ -1,0 +1,31 @@
+Pushing Project Code(files) to Git Repository
+
+1. Reach inside the root directory of project.
+
+2. Use command: Git init    
+    // It will create the .git hidden directory.
+    // It can be seen by command ls -a
+    // Till now all the files are in 'Working Directory' phase
+    // which is not tracked by Git.
+    
+3. Use command: Git add .
+    // It adds all the files and folders in the Git staging area
+    // where these files and folders are tracked by Git
+    
+4. Use command: Git commit -m "<any message>"
+    // It adds all the files/folders from staging area to the 
+    // repository which can be pushed to any Server.
+    
+5. Create a new repository in Git Hub and copy the htts(not ssh) url.
+    e.g. https://github.com/KrishanGawaria/test.git
+    
+6. Use command: git remote add origin https://github.com/KrishanGawaria/test.git
+    // Above step might require the credentials for Github.
+
+7. Use command: git remote -v
+    // It shows that our project is linked to the remote repository with given url.
+    
+8. Use command: git push -u origin master
+    // It pushes the files to the remote repository.
+    
+9. You can check the logs by command: git log
